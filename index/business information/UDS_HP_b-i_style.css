@@ -1,0 +1,43 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+}
+
+
+/*body全体*/
+body{
+	width:auto;
+	height:900px;
+/*	background-image:url("PXL_20230616_020804842.jpg");
+	background-repeat: no-repeat; /* 繰り返しを禁止 */
+/*	background-size: cover; /* 背景が要素に完全に収まるように拡大/縮小 */
+
+}
+
+/*header全体*/
+#header{
+width:auto;
+height:100px;
+backgroun:#blue;
+}
+
+/*header logo*/
+header img{
+	width:150px;
+	height:150px;
+	padding:60px 60px 0px 60px;
+}
+
+
+
+
+
+
+
+footer{
+width:auto;
+height:30px;
+background:red;
+text-align: center;
+
+}

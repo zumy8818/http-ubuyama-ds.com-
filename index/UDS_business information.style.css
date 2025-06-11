@@ -1,0 +1,94 @@
+﻿*{
+	margin: 0;
+	padding: 0;
+}
+
+/*body全体*/
+body{
+	width:auto;
+	height:900px;
+	background-image:url("bokujou_sunset.png");
+	background-repeat: no-repeat; /* 繰り返しを禁止 */
+    background-size: cover; /* 背景が要素に完全に収まるように拡大/縮小 */
+
+}
+a {/*リンクのアンダーラインの消去*/
+  text-decoration: none;
+}
+/*header全体*/
+header{
+	width:auto;
+	height:210px;
+	background:;
+}
+
+/*header logo*/
+header img{
+	width:150px;
+	height:150px;
+	padding:60px 60px 0px 60px;
+}
+
+/*header文字*/
+header span{
+	width:auto;
+	height:80px;
+	background:;
+	margin:-130px 0 0 0;
+	padding:0px 0 0 270px;
+	color:#ffffff;
+	font-size:72px;
+	display: flex;
+/*	text-align: center;
+/*	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	align-items: center;
+	justify-content: center;*/
+/*	height: 100px; /* 任意の高さ */
+}
+
+#main{
+width:auto;
+height:680px;
+flex-direction:row;
+}
+
+#left{
+width:auto;
+height:680px;
+padding:50px 0 0 50px;
+
+/*width:515px;
+height:728px;
+/*background:red;*/
+}
+
+#left h3 font{
+font-size:50px;
+}
+
+
+#right{
+width:300px;
+height:680px;
+padding:50px 0;
+background:red;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+width:auto;
+height:30px;
+background:yellow;
+text-align: center;
+
+}
