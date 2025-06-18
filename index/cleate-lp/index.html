@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LP構成チェックシート</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #333;
+    }
+    h2 {
+      border-left: 6px solid #4CAF50;
+      padding-left: 10px;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input[type="text"], textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      box-sizing: border-box;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 5px;
+    }
+    .result-box {
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px dashed #aaa;
+      background: #f9f9f9;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>LP構成チェックシート</h1>
+
+    <div class="section">
+      <h2>プロジェクト名（LPタイトル）</h2>
+      <label for="projectName">例：ikemizu-iced-coffee</label>
+      <input type="text" id="projectName" placeholder="リポジトリ名やファイル名を入力">
+      <p class="note">※推奨命名：例）20250101_FS_LP_icecafe-LP001（＝日付_クライアント名_カテゴリ_商品名-ナンバリング）</p>
+    </div>
+
+    <div class="section">
+      <h2>販売物（商品）について</h2>
+      <label for="productName">商品名</label>
+      <input type="text" id="productName" placeholder="例：池山名水アイスコーヒー">
+      <p class="note">以下の項目をヒアリング形式で記入してください。</p>
+      <label for="productMaterial">主な原材料・素材</label>
+      <input type="text" id="productMaterial" placeholder="例：池山水源の湧水、阿蘇の焙煎珈琲豆">
+      <label for="productManufacture">どこで、誰が、どう作っている？</label>
+      <input type="text" id="productManufacture" placeholder="例：産山村のカフェで、店主が毎朝手淹れしています">
+      <label for="productFlavor">どんな味・風味？</label>
+      <input type="text" id="productFlavor" placeholder="例：雑味がなく、すっきりとしたクリアな味わい">
+      <label for="productStrength">他の商品と違うポイントは？</label>
+      <input type="text" id="productStrength" placeholder="例：氷まで名水で作っているので、最後の一口まで美味しい">
+      <label for="productVisual">見た目・デザイン面の特徴</label>
+      <input type="text" id="productVisual" placeholder="例：透明感のあるグラスに映える美しさ">
+      <label for="productMessage">伝えたいこだわりやストーリー</label>
+      <textarea id="productMessage" placeholder="例：地域の自然と共存しながら作ることへの思い"></textarea>
+      <label for="productPrice">価格帯</label>
+      <input type="text" id="productPrice" placeholder="例：500円（税込）〜">
+    </div>
+
+    <div class="section">
+      <h2>2. リード文（導入文）</h2>
+      <label for="leadProblem">読者が抱えている問題</label>
+      <input type="text" id="leadProblem" placeholder="例：忙しさで癒しを感じる時間がない">
+      <label for="leadBackground">その問題の背景・原因</label>
+      <input type="text" id="leadBackground" placeholder="例：都会でのストレスや人間関係の疲れなど">
+      <label for="leadConnection">商品とその問題のつながり</label>
+      <input type="text" id="leadConnection" placeholder="例：自然の中で味わう一杯が癒しを提供する">
+      <label for="leadFuture">商品を通じて得られる未来像</label>
+      <input type="text" id="leadFuture" placeholder="例：心が軽くなり、前向きな気持ちになれる">
+    </div>
+
+    <div class="section">
+      <h2>3. 商品紹介</h2>
+      <label for="introWhat">どんな商品ですか？</label>
+      <textarea id="introWhat" placeholder="例：阿蘇の名水を使用したアイスコーヒーで、清らかな味わいが特徴です"></textarea>
+      <label for="introHow">どのように作られていますか？</label>
+      <textarea id="introHow" placeholder="例：地元の焙煎豆を使い、名水で丁寧にハンドドリップしています"></textarea>
+      <label for="introWhy">なぜこの商品を提供しているのですか？</label>
+      <textarea id="introWhy" placeholder="例：自然と共にある暮らしの豊かさを多くの人に届けたいから"></textarea>
+    </div>
+
+    <div class="section">
+      <h2>4. ベネフィット（得られる価値）</h2>
+      <label for="benefitEmotion">どんな気持ちになれる？</label>
+      <input type="text" id="benefitEmotion" placeholder="例：すっと心が軽くなるような癒し">
+      <label for="benefitLife">生活にどんな変化が起こる？</label>
+      <input type="text" id="benefitLife" placeholder="例：旅先での感動体験が思い出に残る">
+      <label for="benefitCompare">他と違う価値とは？</label>
+      <input type="text" id="benefitCompare" placeholder="例：水のおいしさから生まれる特別感">
+    </div>
+
+    <div class="section">
+      <h2>5. お客様の声・証拠</h2>
+      <label for="voice1">お客様の声①</label>
+      <textarea id="voice1" placeholder="例：風味が豊かで、驚くほどクリアな味"></textarea>
+      <label for="voice2">お客様の声②</label>
+      <textarea id="voice2" placeholder="例：氷までもが美味しいなんて初めて"></textarea>
+      <label for="voice3">お客様の声③</label>
+      <textarea id="voice3" placeholder="例：これまで飲んだ中でも最高レベル"></textarea>
+    </div>
+
+    <div class="section">
+      <h2>6. 店主・運営者紹介</h2>
+      <label for="ownerStory">自己紹介・経歴</label>
+      <textarea id="ownerStory" placeholder="例：令和元年に移住し、自然に惚れ込んでカフェを開業"></textarea>
+      <label for="ownerMission">この商品にかける想い</label>
+      <textarea id="ownerMission" placeholder="例：産山村の魅力を体感できる場所をつくりたい"></textarea>
+    </div>
+
+    <div class="section">
+      <h2>7. 限定性・行動喚起</h2>
+      <label for="ctaWhyNow">なぜ今買うべきか？</label>
+      <input type="text" id="ctaWhyNow" placeholder="例：夏限定・現地のみ販売">
+      <label for="ctaWhere">どこで買えるのか？</label>
+      <input type="text" id="ctaWhere" placeholder="例：池山水源の目の前にあるカフェのみ">
+      <label for="ctaAction">行動を促す言葉</label>
+      <input type="text" id="ctaAction" placeholder="例：地図をチェックして出発しよう！">
+    </div>
+
+    <div class="section">
+      <h2>8. Q&A（よくある質問）</h2>
+      <label for="faq1">Q1:</label>
+      <input type="text" id="faq1q" placeholder="例：駐車場はありますか？">
+      <label for="faq1a">A1:</label>
+      <textarea id="faq1a" placeholder="例：無料駐車場を完備しています"></textarea>
+      <label for="faq2">Q2:</label>
+      <input type="text" id="faq2q" placeholder="例：支払い方法は？">
+      <label for="faq2a">A2:</label>
+      <textarea id="faq2a" placeholder="例：現金、クレジットカード、電子マネー対応"></textarea>
+    </div>
+
+    <div class="section">
+      <h2>9. フッター情報</h2>
+      <label for="footerName">店舗名</label>
+      <input type="text" id="footerName" placeholder="例：カフェスタンドフォーシーズン">
+      <label for="footerAddress">住所</label>
+      <input type="text" id="footerAddress" placeholder="例：熊本県阿蘇郡産山村田尻14-4">
+      <label for="footerTime">営業時間・定休日</label>
+      <input type="text" id="footerTime" placeholder="例：10:00〜17:00（水曜定休）">
+      <label for="footerSNS">SNS・Webサイト</label>
+      <input type="text" id="footerSNS" placeholder="例：Instagram @cafe4season">
+    </div>
+
+  </div>
+</body>
+</html>
