@@ -12,8 +12,8 @@ jobs:
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          server: ${{ secrets.FTP_LOLIPOPSERVER }}
+          username: ${{ secrets.FTP_LOLIPOPSERVERNAME }}
+          password: ${{ secrets.FTP_LOLIPOPPASSWORD }}
           local-dir: ./  # 送信元のフォルダ（PC側）
           server-dir: ubuyama-ds.com/  # 送信先のフォルダ（ロリポップ側）
